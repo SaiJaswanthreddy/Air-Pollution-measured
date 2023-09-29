@@ -15,5 +15,5 @@
 		"target": "esnext"
 	},
 	"exclude": ["node_modules"],
-	"extends": "./node_modules/@amaurym/tsconfig/tsconfig"
+	"extends": "./node_modules/tsconfig/tsconfig"
 }
