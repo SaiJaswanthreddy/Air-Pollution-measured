@@ -3,8 +3,11 @@
 	"version": "1.9.5",
 	"author": "Shoot! I Smoke <hi@shootismoke.app>",
 	"contributors": [
-		"Amaury",
-		"Marcelo S. Coelho"
+		"Jaswanth",
+		"Vandana",
+		"likith",
+		"Nitheesh",
+		"Yaswanth"
 	],
 	"main": "node_modules/expo/AppEntry.js",
 	"private": true,
