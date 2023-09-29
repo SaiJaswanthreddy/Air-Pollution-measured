@@ -1,18 +1,3 @@
-// Shoot! I Smoke
-// Copyright (C) 2018-2023  Marcelo S. Coelho, Amaury M.
-
-// Shoot! I Smoke is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// Shoot! I Smoke is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-
-// You should have received a copy of the GNU General Public License
-// along with Shoot! I Smoke.  If not, see <http://www.gnu.org/licenses/>.
 
 import { StackNavigationProp } from '@react-navigation/stack';
 import { stationName } from '@shootismoke/dataproviders';
@@ -78,11 +63,7 @@ export function Details(props: DetailsProps): React.ReactElement {
 		stationMarker = ref;
 	};
 
-	// TODO
-	// I have no idea why, but if we don't clone the object, and continue to
-	// use `location.current` everywhere, we get a `setting key of frozen
-	// object` error. It's related to the MapView below.
-	// eslint-disable-next-line
+	
 	const currentLocation = { ..._currentLocation! };
 
 	if (!currentLocation) {
