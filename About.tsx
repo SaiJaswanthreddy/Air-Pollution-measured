@@ -1,18 +1,4 @@
-// Shoot! I Smoke
-// Copyright (C) 2018-2023  Marcelo S. Coelho, Amaury M.
 
-// Shoot! I Smoke is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// Shoot! I Smoke is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-
-// You should have received a copy of the GNU General Public License
-// along with Shoot! I Smoke.  If not, see <http://www.gnu.org/licenses/>.
 
 import { RouteProp } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
@@ -53,11 +39,11 @@ export const aboutSections = {
 	aboutWhyIsTheStationSoFarTitle: 'aboutWhyIsTheStationSoFarTitle',
 };
 
-const openAmaury = (): void => {
-	Linking.openURL('https://amaurym.com').catch(sentryError('About'));
+const open= (): void => {
+	Linking.openURL('https://a.com').catch(sentryError('About'));
 };
 
-const openWaqi = (): void => {
+const open = (): void => {
 	Linking.openURL('https://aqicn.org').catch(sentryError('About'));
 };
 
@@ -78,7 +64,7 @@ const openGithub = (): void => {
 };
 
 const openMarcelo = (): void => {
-	Linking.openURL('https://www.behance.net/marceloscoelho').catch(
+	Linking.openURL('https://www.behance.net').catch(
 		sentryError('About')
 	);
 };
@@ -294,14 +280,7 @@ export function About(props: AboutProps): React.ReactElement {
 			<View style={styles.credits}>
 				<Text style={styles.h2}>{t('about_credits_title')}</Text>
 				<Text style={theme.text}>
-					{t('about_credits_concept_and_development')}{' '}
-					<Text onPress={openAmaury} style={theme.link}>
-						Amaury M
-					</Text>
-					.{'\n'}
-					{t('about_credits_design_and_copywriting')}{' '}
-					<Text onPress={openMarcelo} style={theme.link}>
-						Marcelo S. Coelho
+					
 					</Text>
 					.{'\n'}
 					{'\n'}
